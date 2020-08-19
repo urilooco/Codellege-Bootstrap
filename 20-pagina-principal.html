@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="">
+    <head>
+        <title>Facebook</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="/facebook.css" type="text/css">
+
+        <!-- FontAwesome -->
+        <script src="https://kit.fontawesome.com/edc06d7550.js" crossorigin="anonymous"></script>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg col-12" style="background-color: #242526;">
+            <div class="d-flex col-3">
+                <img src="./img/facebook-logo.png" style=" width: 40px; height: 40px;" alt="">
+                <input type="search" class="form-control ml-2" style="border-radius: 5%; background-color: #3A3B3C; color: white;" placeholder="Buscar en Facebook">
+            </div>
+            
+
+            <div class="col-6">
+                <button id="btn-nav" style="border-radius: 5%;" class="btn btn-dark btn-md px-5 " href=""><i class="fas fa-home"></i></button>
+                <button id="btn-nav" style="border-radius: 5%;" class="btn btn-dark btn-md px-5 mx-1" href=""><i class="fas fa-desktop"></i></button>
+                <button id="btn-nav" style="border-radius: 5%;" class="btn btn-dark btn-md px-5 mx-1" href=""><i class="fas fa-cart-arrow-down"></i></button>
+                <button id="btn-nav" style="border-radius: 5%;" class="btn btn-dark btn-md px-5 mx-1" href=""><i class="fas fa-users"></i></button>
+                <button id="btn-nav" style="border-radius: 5%;" class="btn btn-dark btn-md px-5 " href=""><i class="fab fa-squarespace"></i></button>
+            </div>
+
+            <div class="col-3 d-flex">
+                <button style="border-radius: 25%;" class="btn mr-3 ml-2" href=""><img src="./img/perfilFoto.jpg" style="width: 28px; border-radius: 50%;" alt=""><span class="ml-2">Uri</span></button>
+                <button style="border-radius: 50%;" class="btn btn-md ml-2" href=""><i class="fas fa-plus"></i></button>
+                <button style="border-radius: 50%;" class="btn btn-md ml-2 " href=""><i class="fab fa-facebook-messenger"></i></button>
+                <button style="border-radius: 50%;" class="btn btn-md ml-2" href=""><i class="fas fa-bell"></i></button>
+
+                <!--AQUÍ COMIENZA EL DROPDPWN DEL NAVBAR-->
+                <div class="nav-item dropdown">
+                    <button style="border-radius: 50%; background-color: #242526; color: #E4E6EB;" class="btn btn-md ml-2" href="" class="dropdown-item dropdown-toggle nav-link dropdown-menu-lg-right dropdown-menu-right" data-toggle="dropdown"><i class="fas fa-caret-down"></i></button>
+                    <div class="dropdown-menu dropdown-menu-right" style="width: 360px; background-color: #242526;">
+                        <div class="container" style="background-color: #242526;">
+                            <button id="btn-nav" class="d-flex btn-block text-left" style="border-radius: 10px; border: 0px; padding: 5px;">
+                                <img src="./img/perfilFoto.jpg" alt="" style="width: 60px; border-radius: 50%;">
+                                <div class="container pt-2">
+                                    <span style="font-size: 17px; color: #E4E4EB;">Uri Millán</span>
+                                    <br>
+                                    <span style="font-size: 15px; color: #B0B3B8;">Ver tu perfil</span>
+                                </div>
+                            </button>
+                            <hr class="bg-light">
+                            <button id="btn-nav" class="d-flex btn-block text-left" style="border-radius: 10px; border: 0px; padding: 5px;">
+                                <a style="color: #A8ABAF;" href="" class="btn btn-md"><i class="fas fa-comment-slash"></i></a>
+                                <div class="container">
+                                    <span style="font-size: 15px; color: #E4E4EB;">Enviar comentarios</span>
+                                    <br>
+                                    <span style="font-size: 13px; color: #B0B3B8;">Ayúdanos a mejorar la nueva versión de Facebook.</span>
+                                </div>
+                            </button>
+                            <hr class="bg-light">
+                            <button id="btn-nav" class="d-flex btn-block text-left" style="border-radius: 10px; border: 0px; padding: 5px;">                            
+                                <a style="color: #A8ABAF;" href="" class="btn btn-md"><i class="fas fa-cog"></i></a>
+                                <div class="container mt-2">
+                                    <span style="font-size: 15px; color: #E4E4EB;">Configuración y privacidad</span>
+                                </div>
+                            </button>
+                            <button id="btn-nav" class="d-flex btn-block text-left" style="border-radius: 10px; border: 0px; padding: 5px;">
+                                <a style="color: #A8ABAF;" href="" class="btn btn-md"><i class="fas fa-question-circle"></i></a>
+                                <div class="container mt-2">
+                                    <span style="font-size: 15px; color: #E4E4EB;">Ayuda y soporte técnico</span>
+                                </div>
+                            </button>
+                            <button id="btn-nav" class="d-flex btn-block text-left" style="border-radius: 10px; border: 0px; padding: 5px;">
+                                <a href="" class="btn btn-md"><i class="fas fa-moon"></i></a>
+                                <div class="container mt-2">
+                                    <span style="font-size: 15px; color: #E4E4EB;">Modo oscuro</span>
+                                </div>
+                            </button>
+                            <button id="btn-nav" class="d-flex btn-block text-left" style="border-radius: 10px; border: 0px; padding: 5px;">
+                                <a style="color: #A8ABAF;" href="" class="btn btn-md mt-3"><i class="fas fa-arrow-circle-left"></i></a>
+                                <div class="container mt-2">
+                                    <span style="font-size: 15px; color: #E4E4EB;"> Cambiar a la versión clásica de Facebook</span>
+                                    <br>
+                                    <span style="font-size: 13px; color: #B0B3B8;">El diseño clásico de Facebbok dejará de estar disponible en septiembre.</span>
+                                </div>
+                            </button>
+                            <button id="btn-nav" class="d-flex btn-block text-left" style="border-radius: 10px; border: 0px; padding: 5px;">
+                                <a style="color: #A8ABAF;" href="" class="btn btn-md"><i class="fas fa-door-open"></i></a>
+                                <div class="container mt-2">
+                                    <span style="font-size: 15px; color: #E4E4EB;">Cerrar sesión</span>
+                                </div>
+                            </button>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!--AQUÍ TERMINA EL DROPDPWN DEL NAVBAR-->
+                
+            </div>
+        </nav>
+        <!--AQUÍ TERMINA EL NAVBAR-->
+
+        <!--AQUÍ COMIENZA SECCIÓN ABAJO DEL NAVBAR-->
+        <div class="col-12 d-flex" style="background-color: #18191A;">
+
+            <!--AQUÍ COMIENZA EL LADO IZQUIERDO-->
+            <div class="col-3" style="background-color: #18191A;">
+                <div>
+                    <div style="color: #E7E9ED; margin-left: -20px;">
+                        <div>
+                            <button class="btn btn-block text-left pt-3"  style="color: #E7E9ED; margin-left: -10px;"><img src="./img/perfilFoto.jpg" style="width: 28px; border-radius: 50%"><span class="pl-2">Uri Millán</span> </button>
+                            <button class="btn btn-block text-left pb-1" style="color: #E7E9ED; margin-left: -10px;"><img src="./img/covid.png" style="width: 28px; border-radius: 50%" alt=""><span class="pl-2">COVID-19: Centro de información</span></button>
+                            <button class="btn btn-block text-left py-1" style="color: #E7E9ED; margin-left: -10px;"><img src="./img/grupos.png" style="width: 28px; border-radius: 50%" alt=""><span class="pl-2">Grupos</span></button>
+                            <button class="btn btn-block text-left py-1" style="color: #E7E9ED; margin-left: -10px;"><img src="./img/guardado.png" style="width: 28px; border-radius: 50%" alt=""><span class="pl-2">Guardado</span></button>
+                            <button class="btn btn-block text-left py-1" style="color: #E7E9ED; margin-left: -10px;"><img src="./img/amigos.png" style="width: 28px; border-radius: 50%" alt=""><span class="pl-2">Amigos</span></button>
+                            <button class="btn btn-block text-left py-1" style="color: #E7E9ED; margin-left: -10px;"><img src="./img/marketplace.png" style="width: 28px; border-radius: 50%" alt=""><span class="pl-2">Marketplace</span></button>
+                            <button class="btn btn-block text-left py-1" style="color: #E7E9ED; margin-left: -10px;"><i class="fas fa-caret-down"></i><span class="pl-2">Ver más</span></button>
+                            
+                            
+
+                        </div>
+                        <hr style="background-color: #3E4042;">
+                        <div>
+
+                            <p style="color: #9A9EA2; font-size: 17px;">Tus accesos directos</p>
+
+                            <button id="btn-hover" class="btn btn-block text-left font-weight-bold">Mercado libre Aguascalientes</button>
+                            <button id="btn-hover" class="btn btn-block text-left font-weight-bold">Te Lo Vendo Aguascalientes</button>
+                            <button id="btn-hover" class="btn btn-block text-left font-weight-bold">Compra Venta de Celulares</button>
+                            <button id="btn-hover" class="btn btn-block text-left font-weight-bold">Champions League en VIVO</button>
+
+                            <footer>
+                                <div class="">
+                                    <ul style="padding: 8px 0px 0px; font-size: 12px; list-style-type: none;" class="d-flex">
+                        
+                                        <li><a style="color: #8D8F93; padding: 0px 0px 0px 3px;" href="">Privacidad</a></li>
+                                        <li><a style="color: #8D8F93; padding: 0px 0px 0px 3px;" href="">·Condiciones</a></li>
+                                        <li><a style="color: #8D8F93; padding: 0px 0px 0px 3px;" href="">·Publicidad</a></li>
+                                        <li><a style="color: #8D8F93; padding: 0px 0px 0px 3px;" href="">·Cookies </a></li>
+                                        <li><a style="color: #8D8F93; padding: 0px 0px 0px 3px;" href="">·Más</a></li>
+                    
+                                    </ul>
+                                </div>
+                            </footer>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--AQUÍ TERMINA EL LADO IZQUIERDO-->
+
+            <!--AQUÍ COMIENZA EL LADO DE EN MEDIO-->
+            <div class="col-6" style="background-color: #18191A;">
+                
+
+                <div class="col-12">
+                    
+
+                    <div class="row">
+                        <div class="mt-3" style="background-color: #242526; margin: auto;">
+                                <div class="card" style="width: 100%; background-color: #242526; margin: auto;">
+                                        <div class="card-header" style="background-color: #4E4F50; color: #DAE9ED;">
+                                            Crear publicacion
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-2" style="text-align: right">
+                                                <img src="./img/perfilFoto.jpg" class="rounded-circle" style="width: 44px; margin-top: 10px;"/>
+                                            </div>
+                                            <div class="col-md-10">
+                                                <button class="btn btn-light mt-3">¿Qué estás pensando, Uri?</button>
+                                            </div>
+                                        </div>
+                                        <hr style="background-color: #3A3B3C;">
+                
+                                        <div class="row" style="margin-left: 0px;">
+                                            <div class="col-md-3">
+                                                <button id="btn-medio" style="border: 0px;" class=" btn fc-btn fc-btn-rounded btn-block">
+                                                    <div>
+                                                        <i style="color: #F02849;" class="fas fa-video"></i>
+                                                        
+                                                        <label>Video en vivo</label>
+                                                    </div>                                    
+                                                </button>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <button id="btn-medio" style="border: 0px;" class="fc-btn fc-btn-rounded btn-block">
+                                                    <div>
+                                                        <i style="color: #45BD62;" class="far fa-file-image"></i>
+                                                        <label >Foto/video</label>
+                                                    </div>                                    
+                                                </button>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <button id="btn-medio" style="border: 0px;" class="btn fc-btn fc-btn-rounded btn-block">
+                                                    <div>
+                                                        <i style="color: #F7B928;" class="far fa-grin"></i>
+                                                        <label>Sentimentos/...</label>
+                                                    </div>                                    
+                                                </button>
+                                            </div>   
+                                            
+                                        </div>
+                                        <br/>              
+                                    </div>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-md-12" style="background-color: #242526;">
+                            <div class="card" style="background-color: #242526;">
+                                <div class="card-body">
+                                    <div style="font-size: 14px; color: #DFE1E6;">
+                                        <img src="img/perfilFoto.jpg" class="rounded-circle" style="width: 40px; margin-right: 4px"/>
+                                        <a href="#"><b class="h6 font-weight-bold" style="color: #DFE1E6;">Uri Millán</b></a>
+                                        
+                                    </div>
+                                    <br/>
+                                    <img src="./img/fotobody.jpg" style="width: 100%;"/>
+                                    <br/><br/>
+                                    <a href="#" style="color: #DFE1E6;" class="h6 font-weight-bolder">Uri Millán</a><br/>
+                                    <span style="color: #DFE1E6;" class="pt-3 h6 font-weight-normal">
+                                        I die for you.
+                                    </span>
+                                </div>
+                                <hr style="background-color: #3A3B3C;">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div style="text-align: right; color: #DFE1E6;">
+                                            <span style="margin-right: 24px; color: #DFE1E6;">10 comentarios 2 veces compartido</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr style="background-color: #3A3B3C;">
+                                <div class="row" style="margin-left: 0px;">
+                                    <div class="col-3">
+                                        <button id="btn-medio" class="fc-btn btn">
+                                            <div>
+                                                <i class="far fa-thumbs-up"></i>
+                                                <label>Me gusta</label>
+                                            </div>                                    
+                                        </button>
+                                    </div>
+                                    <div  class="col-3">
+                                        <button id="btn-medio" class="fc-btn btn ">
+                                            <div>
+                                                <i class="far fa-comment-alt"></i>
+                                                <label>Comentar</label>
+                                            </div>                                    
+                                        </button>
+                                    </div>
+                                    <div class="col-3">
+                                        <button id="btn-medio"  class="fc-btn btn">
+                                            <div>
+                                                <i class="fas fa-share"></i>
+                                                <label>Compartir</label>
+                                            </div>                                    
+                                        </button>
+                                    </div>   
+                                </div>
+                                <br/>
+
+
+                            </div> 
+                        </div>
+                    </div> 
+                    <div class="row">
+                        <div class="col-md-12" style="background-color: #242526;">
+                            <div class="card" style="background-color: #242526;">
+                                <div class="card-body">
+                                    <div style="font-size: 14px; color: #DFE1E6;">
+                                        <img src="img/perfilFoto.jpg" class="rounded-circle" style="width: 40px; margin-right: 4px"/>
+                                        <a href="#"><b class="h6 font-weight-bold" style="color: #DFE1E6;">Uri Millán</b></a>
+                                        
+                                    </div>
+                                    <br/>
+                                    <img src="./img/fotobody1.jpg" style="width: 100%;"/>
+                                    <br/><br/>
+                                    <a href="#" style="color: #DFE1E6;" class="h6 font-weight-bolder">Uri Millán</a><br/>
+                                    <span style="color: #DFE1E6;" class="pt-3 h6 font-weight-normal">
+                                        Breathe.
+                                    </span>
+                                </div>
+                                <hr style="background-color: #3A3B3C;">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div style="text-align: right; color: #DFE1E6;">
+                                            <span style="margin-right: 24px; color: #DFE1E6;">10 comentarios 2 veces compartido</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr style="background-color: #3A3B3C;">
+                                <div class="row" style="margin-left: 0px;">
+                                    <div class="col-3">
+                                        <button id="btn-medio" class="fc-btn btn">
+                                            <div>
+                                                <i class="far fa-thumbs-up"></i>
+                                                <label>Me gusta</label>
+                                            </div>                                    
+                                        </button>
+                                    </div>
+                                    <div  class="col-3">
+                                        <button id="btn-medio" class="fc-btn btn ">
+                                            <div>
+                                                <i class="far fa-comment-alt"></i>
+                                                <label>Comentar</label>
+                                            </div>                                    
+                                        </button>
+                                    </div>
+                                    <div class="col-3">
+                                        <button id="btn-medio"  class="fc-btn btn">
+                                            <div>
+                                                <i class="fas fa-share"></i>
+                                                <label>Compartir</label>
+                                            </div>                                    
+                                        </button>
+                                    </div>   
+                                </div>
+                                <br/>
+
+
+                            </div> 
+                        </div>
+                    </div> 
+                    <div class="row">
+                        <div class="col-md-12" style="background-color: #242526;">
+                            <div class="card" style="background-color: #242526;">
+                                <div class="card-body">
+                                    <div style="font-size: 14px; color: #DFE1E6;">
+                                        <img src="img/perfilFoto.jpg" class="rounded-circle" style="width: 40px; margin-right: 4px"/>
+                                        <a href="#"><b class="h6 font-weight-bold" style="color: #DFE1E6;">Uri Millán</b></a>
+                                        
+                                    </div>
+                                    <br/>
+                                    <img src="./img/fotobody2.jpg" style="width: 100%;"/>
+                                    <br/><br/>
+                                    <a href="#" style="color: #DFE1E6;" class="h6 font-weight-bolder">Uri Millán</a><br/>
+                                    <span style="color: #DFE1E6;" class="pt-3 h6 font-weight-normal">
+                                        Too good.
+                                    </span>
+                                </div>
+                                <hr style="background-color: #3A3B3C;">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div style="text-align: right; color: #DFE1E6;">
+                                            <span style="margin-right: 24px; color: #DFE1E6;">10 comentarios 2 veces compartido</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr style="background-color: #3A3B3C;">
+                                <div class="row" style="margin-left: 0px;">
+                                    <div class="col-3">
+                                        <button id="btn-medio" class="fc-btn btn">
+                                            <div>
+                                                <i class="far fa-thumbs-up"></i>
+                                                <label>Me gusta</label>
+                                            </div>                                    
+                                        </button>
+                                    </div>
+                                    <div  class="col-3">
+                                        <button id="btn-medio" class="fc-btn btn ">
+                                            <div>
+                                                <i class="far fa-comment-alt"></i>
+                                                <label>Comentar</label>
+                                            </div>                                    
+                                        </button>
+                                    </div>
+                                    <div class="col-3">
+                                        <button id="btn-medio"  class="fc-btn btn">
+                                            <div>
+                                                <i class="fas fa-share"></i>
+                                                <label>Compartir</label>
+                                            </div>                                    
+                                        </button>
+                                    </div>   
+                                </div>
+                                <br/>
+
+
+                            </div> 
+                        </div>
+                    </div> 
+
+                </div>
+
+
+            </div>
+                
+                
+            <!--AQUÍ TERMINA EL LADO DE EN MEDIO-->
+
+
+            <!--AQUÍ COMIENZA EL LADO DERECHO-->
+            <div class="col-3" style="background-color: #18191A;">
+
+                <div class="pt-3 pl-3">
+                    <span style="color: #B0B3B8; font-size: 17px;">Cumpleaños</span>
+                    <div class="d-flex pt-2">
+                        
+                        <button class="btn btn-block text-left" style="color: #E2E4E9; font-size: 15px"><i style="color: #37A4FA;" class="fas fa-gift"></i><span class="ml-2">Hoy es el cumpleaños de <span class="font-weight-bold">El Chapo Guzmán</span> y <span class="font-weight-bold">Paty Chapoy</span></span></button>
+                    </div>
+                    <hr style="background-color: #3E4042;">
+                    <div>
+                        <div class="d-flex">
+                            <span style="color: #B0B3B8; font-size: 17px;">Contactos</span>
+                            <button class="btn btn-md mx-2" style="border-radius: 50%;">
+                                <i class="fas fa-video"></i>
+                            </button>
+                            <button class="btn  mx-2" style="border-radius: 50%;">
+                                <i class="fas fa-search"></i>
+                            </button>
+                            <button class="btn  mx-2" style="border-radius: 50%;">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </button>
+                        </div>
+
+                        <div>
+                            <div class="d-flex">
+                                <button class="btn">
+                                    <img style="width: 28px; border-radius: 50%;" src="/img/userunknow.png" alt="">
+                                    <span style="color: #E4E6EB; font-size: 15px;" class="ml-2 font-weight-bold">Usuario de Facebook</span>
+                                </button>
+                            </div>
+                            <div class="d-flex">
+                                <button class="btn">
+                                    <img style="width: 28px; border-radius: 50%;" src="/img/userunknow.png" alt="">
+                                    <span style="color: #E4E6EB; font-size: 15px;" class="ml-2 font-weight-bold">Usuario de Facebook</span>
+                                </button>
+                            </div>
+                            <div class="d-flex">
+                                <button class="btn">
+                                    <img style="width: 28px; border-radius: 50%;" src="/img/userunknow.png" alt="">
+                                    <span style="color: #E4E6EB; font-size: 15px;" class="ml-2 font-weight-bold">Usuario de Facebook</span>
+                                </button>
+                            </div>
+                            <div class="d-flex">
+                                <button class="btn">
+                                    <img style="width: 28px; border-radius: 50%;" src="/img/userunknow.png" alt="">
+                                    <span style="color: #E4E6EB; font-size: 15px;" class="ml-2 font-weight-bold">Usuario de Facebook</span>
+                                </button>
+                            </div>
+                            <div class="d-flex">
+                                <button class="btn">
+                                    <img style="width: 28px; border-radius: 50%;" src="/img/userunknow.png" alt="">
+                                    <span style="color: #E4E6EB; font-size: 15px;" class="ml-2 font-weight-bold">Usuario de Facebook</span>
+                                </button>
+                            </div>
+                            <div class="d-flex">
+                                <button class="btn">
+                                    <img style="width: 28px; border-radius: 50%;" src="/img/userunknow.png" alt="">
+                                    <span style="color: #E4E6EB; font-size: 15px;" class="ml-2 font-weight-bold">Usuario de Facebook</span>
+                                </button>
+                            </div>
+                            <div class="d-flex">
+                                <button class="btn">
+                                    <img style="width: 28px; border-radius: 50%;" src="/img/userunknow.png" alt="">
+                                    <span style="color: #E4E6EB; font-size: 15px;" class="ml-2 font-weight-bold">Usuario de Facebook</span>
+                                </button>
+                            </div>
+                            <div class="d-flex">
+                                <button class="btn">
+                                    <img style="width: 28px; border-radius: 50%;" src="/img/userunknow.png" alt="">
+                                    <span style="color: #E4E6EB; font-size: 15px;" class="ml-2 font-weight-bold">Usuario de Facebook</span>
+                                </button>
+                            </div>
+                            <div class="d-flex">
+                                <button class="btn">
+                                    <img style="width: 28px; border-radius: 50%;" src="/img/userunknow.png" alt="">
+                                    <span style="color: #E4E6EB; font-size: 15px;" class="ml-2 font-weight-bold">Usuario de Facebook</span>
+                                </button>
+                            </div>
+                            <div class="d-flex">
+                                <button class="btn">
+                                    <img style="width: 28px; border-radius: 50%;" src="/img/userunknow.png" alt="">
+                                    <span style="color: #E4E6EB; font-size: 15px;" class="ml-2 font-weight-bold">Usuario de Facebook</span>
+                                </button>
+                            </div>
+                            <div class="d-flex">
+                                <button class="btn">
+                                    <img style="width: 28px; border-radius: 50%;" src="/img/userunknow.png" alt="">
+                                    <span style="color: #E4E6EB; font-size: 15px;" class="ml-2 font-weight-bold">Usuario de Facebook</span>
+                                </button>
+                            </div>
+                            <div class="d-flex">
+                                <button class="btn">
+                                    <img style="width: 28px; border-radius: 50%;" src="/img/userunknow.png" alt="">
+                                    <span style="color: #E4E6EB; font-size: 15px;" class="ml-2 font-weight-bold">Usuario de Facebook</span>
+                                </button>
+                            </div>
+                            <div class="d-flex">
+                                <button class="btn">
+                                    <img style="width: 28px; border-radius: 50%;" src="/img/userunknow.png" alt="">
+                                    <span style="color: #E4E6EB; font-size: 15px;" class="ml-2 font-weight-bold">Usuario de Facebook</span>
+                                </button>
+                            </div>
+                            <div class="d-flex">
+                                <button class="btn">
+                                    <img style="width: 28px; border-radius: 50%;" src="/img/userunknow.png" alt="">
+                                    <span style="color: #E4E6EB; font-size: 15px;" class="ml-2 font-weight-bold">Usuario de Facebook</span>
+                                </button>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>
+            <!--AQUÍ TERMINA EL LADO DERECHO-->
+
+        </div>
+        <!--AQUÍ TERMINA SECCIÓN ABAJO DEL NAVBAR-->
+
+        
+
+
+        
+
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>

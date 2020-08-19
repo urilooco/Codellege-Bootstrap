@@ -1,0 +1,113 @@
+*{
+    font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+}
+
+#back-f{
+    background-color: #F0F2F5;
+    padding: 92px 0px 132px;
+}
+
+#secc1{
+    margin: 0px 0px 20px 0px;
+}
+
+#vistaFoto{
+    border-radius: 40px;
+    font-style: none;
+    color: black;
+}
+#anadirCuenta{
+    padding: 55px;
+}
+.fondoCuenta{
+ background-color: #F5F6F7;
+}
+.logoFace{
+    
+    width: 198.81px;
+    height: 70px;
+    margin: -20px;
+    
+}
+#parrafo1{
+    width: 536px;
+    height: 32px;
+    color: #1C1E21;
+    font-size: 28px;
+    
+}
+#parrafo2{
+    width: 536px;
+    height: 36px;
+    color: #606770;
+    font-size: 15px;
+    margin: 0px 0px 12px;
+    padding: 0px 0px 12px;
+}
+#espacios{
+    width: 364px;
+    height: 52px;
+    padding: 6px 0px;
+}
+
+#butCrearCuenta{
+    width: 189.8px;
+    height: 48px;
+    font-size: 16px;
+    background-color: #42B72A;
+    color: #ffffff;
+    padding: 10px 16px;
+    margin: 0px auto;
+
+}
+
+#formLogin{
+    margin-top: 40px;
+    background-color: white; 
+    width: 396px; 
+    height: 311px; 
+    align-items: center; 
+    padding-top: 10px;
+    padding-bottom: 24px;
+    border-radius: 8px;
+}
+#inicioSesion {
+    width: 536px;
+    height: 496px;
+    padding-top: 12px;
+    padding-left: 165px;
+    padding-right: 48px;
+}
+
+button{
+    background-color: #18191A !important;
+    color: #E7E9ED !important;
+}
+button:hover{
+    background-color: #3A3B3C !important;
+}
+
+#btn-hover{
+    margin-left: -10px;
+    background-color: #18191A !important;
+    color: #E7E9ED !important;
+}
+#btn-hover:hover{
+    background-color: #3A3B3C !important;
+}
+
+#btn-nav{
+    background-color: #242526 !important;
+    color: #E7E9ED !important;
+}
+#btn-nav:hover{
+    background-color: #3A3B3C !important;
+}
+
+#btn-medio{
+    background-color: #242526 !important;
+    color: rgb(172,175,179) !important;
+}
+#btn-medio:hover{
+ background-color: #4E4F50 !important;
+}

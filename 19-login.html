@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>Facebook</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="/facebook.css" type="text/css">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <div id="back-f" class="col-12 d-flex">
+
+            <div id="inicioSesion">
+                <div class="" id="secc1">
+                    <img src="./img/dF5SId3UHWd.svg" alt="Aquí va logo de Facebook" class="logoFace">
+                    <div id="parrafo1" class="mt-3">Inicios de sesión recientes</div>
+                    <div id="parrafo2">Haz clic en tu foto o añade otra cuenta</div>
+
+                    <div class="d-flex">
+                    
+                        <div class="card mr-3" style="width: 160px;">
+
+
+                            <a style="text-decoration: none;" href="" data-toggle="modal" data-target="#miModal">
+                                <img src="./img/perfilFoto.jpg" class="card-img-top" alt="Foto de perfil.">
+                                
+                                <p class="pt-3 card-text text-center" id="vistaFoto">"Nombre"</p>
+                            </a>
+
+
+                            <!--sección correspondiente a modal LOGIN-->
+                            <div class="modal fade" data-backdrop="static" id="miModal" tabindex="-1" aria-labelledby="Modalloginejemplo" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content container" style="width: 290px;">
+                                        <div class="modal-header d-block">  
+                                            <div>                                         
+                                                <img class="d-block" src="./img/perfilFoto.jpg" style="width: 160px; margin: auto; border-radius: 10px;" alt="">
+                                            </div> 
+                                            <br>
+                                            <div class="d-block text-center" style="font-size: 18px;">
+                                                Uri Millán
+                                            </div>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <form action="">
+                                                <div class="form-row">
+                                                    <div class="form-group col-12">
+                                                        <input type="password" id="password" class="form-control" placeholder="Contraseña">
+                                                        <div class="mt-1 ml-2 container">
+                                                            <input id="acept" type="checkbox" class="form-check-input">
+                                                            <label style="font-size: 12px; color: #606770;" for="acept">Recordar contraseña</label>
+                                                        </div>
+                                                        <a href="./20-pagina-principal.html" class="btn btn-primary btn-block my-2 font-weight-bold" style="font-size: 12px;">Iniciar sesión</a>
+                                                    </div>
+                                                </div>
+                                                
+                                            </form>
+
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <a type="button" class="btn-block text-center" href="">¿Olvidaste tu contraseña?</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Aquí termina la sección de modal LOGIN -->
+
+                            
+                        </div>
+                        <div class="card" style="width: 160px;">
+                            <a style="text-decoration: none;" href="">
+                                <img src="./img/FcvbMpW6PWW.png" class="card-img-top fondoCuenta" id="anadirCuenta" alt="">
+                                <div class="card-body">
+                                
+                                <p class="card-text text-center text-primary" id="vistaFoto">Añadir cuenta</p>
+                                
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="container col-6">
+
+                <div id="formLogin"  class="container form-control shadow">
+                    <form action="">
+                        <input id="espacios" type="email" class="form-control mt-2" placeholder="Correo electrónico o número de teléfono" style="padding: 14px 16px;">
+                        <input id="espacios" type="password" class="form-control my-2" placeholder="Contraseña" style="padding: 14px 16px;">
+                        <a href="./20-pagina-principal.html" class="btn btn-primary btn-block my-2 font-weight-bold" style="font-size: 20px;">Entrar</a>
+                        <div class="text-center">
+                            <a href="" class="text-primary" style="font-size: 14px;">¿Has olvidado los datos de la cuenta?</a>
+                        </div>
+                        <hr style="margin: 20px 16px;">
+                        <div class="text-center">
+                            <a id="butCrearCuenta" href="" class="btn btn-success font-weight-bold">Crear cuenta nueva</a>
+                        </div>
+
+                        <div class="mt-3">
+                            <div class="text-center" style="padding: 28px 0px 0px;  color: #1C1E21; font-size: 14px;">
+                                <a style="color: #1C1E21; width: 396px; height: 36px;" class="font-weight-bold" href="">Crea una página</a> para un personaje público, un grupo de música o un negocio.
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+                
+
+            </div>
+
+        </div>  
+
+
+        <footer style="padding: 20px 0px 0px;">
+            <div class="container">
+
+                <ul style="padding: 8px 0px 0px; font-size: 12px; list-style-type: none;" class="d-flex">
+                    
+                    <li style="color: #737373;">Español (España)</li>
+                    <li><a style="color: #8A8D91; padding: 0px 0px 0px 10px;" href="">English (US)</a></li>
+                    <li><a style="color: #8A8D91; padding: 0px 0px 0px 10px;" href="">Português (Brasil)</a></li>
+                    <li><a style="color: #8A8D91; padding: 0px 0px 0px 10px;" href="">Français (France)</a></li>
+                    <li><a style="color: #8A8D91; padding: 0px 0px 0px 10px;" href="">Deutsch</a></li>
+                    <li><a style="color: #8A8D91; padding: 0px 0px 0px 10px;" href="">Italiano</a></li>
+                    <li><a style="color: #8A8D91; padding: 0px 0px 0px 10px;" href="">日本語</a></li>
+                    <li><a style="color: #8A8D91; padding: 0px 0px 0px 10px;" href="">العربية</a></li>
+                    <li><a style="color: #8A8D91; padding: 0px 0px 0px 10px;" href="">हिन्दी</a></li>
+                    <li><a style="color: #8A8D91; padding: 0px 0px 0px 10px;" href="">中文(简体)</a></li>
+
+                </ul>
+                <hr>
+
+            </div>
+
+        </footer>
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
